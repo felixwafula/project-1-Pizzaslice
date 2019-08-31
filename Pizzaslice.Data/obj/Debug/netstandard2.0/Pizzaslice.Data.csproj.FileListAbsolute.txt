@@ -1,0 +1,12 @@
+C:\revature\PizzaSliceApp\Pizzaslice.Data\bin\Debug\netstandard2.0\Pizzaslice.Data.deps.json
+C:\revature\PizzaSliceApp\Pizzaslice.Data\bin\Debug\netstandard2.0\Pizzaslice.Data.dll
+C:\revature\PizzaSliceApp\Pizzaslice.Data\bin\Debug\netstandard2.0\Pizzaslice.Data.pdb
+C:\revature\PizzaSliceApp\Pizzaslice.Data\obj\Debug\netstandard2.0\Pizzaslice.Data.csprojAssemblyReference.cache
+C:\revature\PizzaSliceApp\Pizzaslice.Data\obj\Debug\netstandard2.0\Pizzaslice.Data.csproj.CoreCompileInputs.cache
+C:\revature\PizzaSliceApp\Pizzaslice.Data\obj\Debug\netstandard2.0\Pizzaslice.Data.AssemblyInfoInputs.cache
+C:\revature\PizzaSliceApp\Pizzaslice.Data\obj\Debug\netstandard2.0\Pizzaslice.Data.AssemblyInfo.cs
+C:\revature\PizzaSliceApp\Pizzaslice.Data\obj\Debug\netstandard2.0\Pizzaslice.Data.dll
+C:\revature\PizzaSliceApp\Pizzaslice.Data\obj\Debug\netstandard2.0\Pizzaslice.Data.pdb
+C:\revature\PizzaSliceApp\Pizzaslice.Data\bin\Debug\netstandard2.0\Pizzaslice.Domain.dll
+C:\revature\PizzaSliceApp\Pizzaslice.Data\bin\Debug\netstandard2.0\Pizzaslice.Domain.pdb
+C:\revature\PizzaSliceApp\Pizzaslice.Data\obj\Debug\netstandard2.0\Pizzaslice.Data.csproj.CopyComplete

@@ -1,0 +1,14 @@
+C:\revature\PizzaSliceApp\Pizzaslice.Tests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\revature\PizzaSliceApp\Pizzaslice.Tests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\revature\PizzaSliceApp\Pizzaslice.Tests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\revature\PizzaSliceApp\Pizzaslice.Tests\bin\Debug\netcoreapp2.2\Pizzaslice.Tests.deps.json
+C:\revature\PizzaSliceApp\Pizzaslice.Tests\bin\Debug\netcoreapp2.2\Pizzaslice.Tests.runtimeconfig.json
+C:\revature\PizzaSliceApp\Pizzaslice.Tests\bin\Debug\netcoreapp2.2\Pizzaslice.Tests.runtimeconfig.dev.json
+C:\revature\PizzaSliceApp\Pizzaslice.Tests\bin\Debug\netcoreapp2.2\Pizzaslice.Tests.dll
+C:\revature\PizzaSliceApp\Pizzaslice.Tests\bin\Debug\netcoreapp2.2\Pizzaslice.Tests.pdb
+C:\revature\PizzaSliceApp\Pizzaslice.Tests\obj\Debug\netcoreapp2.2\Pizzaslice.Tests.csprojAssemblyReference.cache
+C:\revature\PizzaSliceApp\Pizzaslice.Tests\obj\Debug\netcoreapp2.2\Pizzaslice.Tests.csproj.CoreCompileInputs.cache
+C:\revature\PizzaSliceApp\Pizzaslice.Tests\obj\Debug\netcoreapp2.2\Pizzaslice.Tests.AssemblyInfoInputs.cache
+C:\revature\PizzaSliceApp\Pizzaslice.Tests\obj\Debug\netcoreapp2.2\Pizzaslice.Tests.AssemblyInfo.cs
+C:\revature\PizzaSliceApp\Pizzaslice.Tests\obj\Debug\netcoreapp2.2\Pizzaslice.Tests.dll
+C:\revature\PizzaSliceApp\Pizzaslice.Tests\obj\Debug\netcoreapp2.2\Pizzaslice.Tests.pdb
