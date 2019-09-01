@@ -5,7 +5,7 @@ namespace Pizzaslice.Data
 {
     public class PizzasliceDbContext : DbContext
     {
-        public PizzasliceDbContext(DbContextOptions options) : base(options)
+        public PizzasliceDbContext(DbContextOptions<PizzasliceDbContext> options) : base(options)
         {
 
         }
@@ -19,7 +19,7 @@ namespace Pizzaslice.Data
         public DbSet<Cheese> Cheeses { get; set; }
         public DbSet<Meat> Meats { get; set; }
         public DbSet<Veggie> Veggies { get; set; }
-        public DbSet<OrderHistory> OrderHistories { get; set; }
+              
 
     }
 }

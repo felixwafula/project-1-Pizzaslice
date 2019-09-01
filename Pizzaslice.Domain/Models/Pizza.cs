@@ -3,7 +3,7 @@ namespace Pizzaslice.Domain.Models
     public class Pizza
     {
         //properties.
-        public int MyPizzaId { get; set; }
+        public int PizzaId { get; set; }
         public Crust MyCrust { get; set; }
         public Size MySize { get; set; }
         public Sauce MySauce { get; set; }
