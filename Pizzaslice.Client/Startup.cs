@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Pizzaslice.Data;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Pizzaslice.Client
 {
@@ -33,6 +36,8 @@ namespace Pizzaslice.Client
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddEntityFrameworkSqlServer()
+            .AddDbContext<PizzasliceDbContext>(options => options.UseSqlServer(Configuration["connectionStrings:pizzasliceDBString"]));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
