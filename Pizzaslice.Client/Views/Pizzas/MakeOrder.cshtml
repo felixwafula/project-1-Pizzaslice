@@ -1,0 +1,15 @@
+@model List<Pizzaslice.Domain.Models.Pizza>
+
+<ul>
+    @foreach (Pizzaslice.Domain.Models.Pizza p in Model)
+    {
+        <li>@p.MyCrust.CrustName</li>
+        <li>@p.MySize.SizeName</li>
+        <li>@p.MySauce.SauceName</li>
+        <li>@p.MyCheese.CheeseName</li>
+        <li>@p.MyMeat.MeatName</li>
+        <li>@p.MyVeggie.VeggieName</li>
+    }
+</ul>
+
+

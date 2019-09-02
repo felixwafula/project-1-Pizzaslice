@@ -1,0 +1,9 @@
+@model Pizzaslice.Domain.Models.User;
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>@Model.UserName</h2>
+<h2>@Model.UserPassword</h2>
+<button type="button" asp-area="" asp-controller="Home" asp-action="Index">Submit</button>

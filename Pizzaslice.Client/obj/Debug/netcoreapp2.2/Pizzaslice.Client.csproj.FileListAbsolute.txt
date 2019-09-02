@@ -37,3 +37,7 @@ C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Pizzaslice.C
 C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Pizzaslice.Client.csproj.CopyComplete
 C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Pizzaslice.Client.dll
 C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Pizzaslice.Client.pdb
+C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\Users\RegisterUser.g.cshtml.cs
+C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\Users\Login.g.cshtml.cs
+C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\Orders\MakeOrder.g.cshtml.cs
+C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\Pizzas\MakeOrder.g.cshtml.cs
