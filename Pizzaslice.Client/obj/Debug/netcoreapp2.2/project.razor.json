@@ -2991,6 +2991,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Pizzas\\MakeOrder.cshtml",
+      "TargetPath": "Views\\Pizzas\\MakeOrder.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -3016,8 +3021,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Pizzas\\MakePizza.cshtml",
-      "TargetPath": "Views\\Pizzas\\MakePizza.cshtml",
+      "FilePath": "Views\\Locations\\CreateLocation.cshtml",
+      "TargetPath": "Views\\Locations\\CreateLocation.cshtml",
       "FileKind": "mvc"
     }
   ],
