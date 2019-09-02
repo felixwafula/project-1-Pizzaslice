@@ -95,31 +95,7 @@ namespace Pizzaslice.Data.Migrations
 
                     b.ToTable("Orders");
                 });
-
-            // modelBuilder.Entity("Pizzaslice.Domain.Models.OrderHistory", b =>
-            //     {
-            //         b.Property<int>("OrderHistoryId")
-            //             .ValueGeneratedOnAdd()
-            //             .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            //         b.Property<int?>("LocationId1");
-
-            //         b.Property<int?>("OrderId1");
-
-            //         b.Property<DateTime>("USerOrderDate");
-
-            //         b.Property<int?>("UserId");
-
-            //         b.HasKey("OrderHistoryId");
-
-            //         b.HasIndex("LocationId1");
-
-            //         b.HasIndex("OrderId1");
-
-            //         b.HasIndex("UserId");
-
-            //         b.ToTable("OrderHistories");
-            //     });
+            
 
             modelBuilder.Entity("Pizzaslice.Domain.Models.Pizza", b =>
                 {
@@ -228,21 +204,7 @@ namespace Pizzaslice.Data.Migrations
                     b.ToTable("Veggies");
                 });
 
-            // modelBuilder.Entity("Pizzaslice.Domain.Models.OrderHistory", b =>
-            //     {
-            //         b.HasOne("Pizzaslice.Domain.Models.Location", "LocationId")
-            //             .WithMany()
-            //             .HasForeignKey("LocationId1");
-
-            //         b.HasOne("Pizzaslice.Domain.Models.Order", "OrderId")
-            //             .WithMany()
-            //             .HasForeignKey("OrderId1");
-
-            //         b.HasOne("Pizzaslice.Domain.Models.User", "USerId")
-            //             .WithMany()
-            //             .HasForeignKey("UserId");
-            //     });
-
+           
             modelBuilder.Entity("Pizzaslice.Domain.Models.Pizza", b =>
                 {
                     b.HasOne("Pizzaslice.Domain.Models.Cheese", "MyCheese")

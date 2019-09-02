@@ -138,40 +138,7 @@ namespace Pizzaslice.Data.Migrations
                     table.PrimaryKey("PK_Veggies", x => x.VeggieId);
                 });
 
-            // migrationBuilder.CreateTable(
-            //     name: "OrderHistories",
-            //     columns: table => new
-            //     {
-            //         OrderHistoryId = table.Column<int>(nullable: false)
-            //             .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-            //         UserId = table.Column<int>(nullable: true),
-            //         LocationId1 = table.Column<int>(nullable: true),
-            //         OrderId1 = table.Column<int>(nullable: true),
-            //         USerOrderDate = table.Column<DateTime>(nullable: false)
-            //     },
-            //     constraints: table =>
-            //     {
-            //         table.PrimaryKey("PK_OrderHistories", x => x.OrderHistoryId);
-            //         table.ForeignKey(
-            //             name: "FK_OrderHistories_Locations_LocationId1",
-            //             column: x => x.LocationId1,
-            //             principalTable: "Locations",
-            //             principalColumn: "LocationId",
-            //             onDelete: ReferentialAction.Restrict);
-            //         table.ForeignKey(
-            //             name: "FK_OrderHistories_Orders_OrderId1",
-            //             column: x => x.OrderId1,
-            //             principalTable: "Orders",
-            //             principalColumn: "OrderId",
-            //             onDelete: ReferentialAction.Restrict);
-            //         table.ForeignKey(
-            //             name: "FK_OrderHistories_Users_UserId",
-            //             column: x => x.UserId,
-            //             principalTable: "Users",
-            //             principalColumn: "UserId",
-            //             onDelete: ReferentialAction.Restrict);
-            //     });
-
+            
             migrationBuilder.CreateTable(
                 name: "Pizzas",
                 columns: table => new
@@ -233,21 +200,7 @@ namespace Pizzaslice.Data.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
-            // migrationBuilder.CreateIndex(
-            //     name: "IX_OrderHistories_LocationId1",
-            //     table: "OrderHistories",
-            //     column: "LocationId1");
-
-            // migrationBuilder.CreateIndex(
-            //     name: "IX_OrderHistories_OrderId1",
-            //     table: "OrderHistories",
-            //     column: "OrderId1");
-
-            // migrationBuilder.CreateIndex(
-            //     name: "IX_OrderHistories_UserId",
-            //     table: "OrderHistories",
-            //     column: "UserId");
-
+            
             migrationBuilder.CreateIndex(
                 name: "IX_Pizzas_MyCheeseCheeseId",
                 table: "Pizzas",
@@ -286,9 +239,7 @@ namespace Pizzaslice.Data.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            // migrationBuilder.DropTable(
-            //     name: "OrderHistories");
-
+            
             migrationBuilder.DropTable(
                 name: "Pizzas");
 

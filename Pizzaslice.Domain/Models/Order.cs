@@ -5,21 +5,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Pizzaslice.Domain.Models
 {
-    public class Order : IEnumerable<Pizza>
+    public class Order
     {
         //properties        
         public int OrderId { get; set; }
         public List<Pizza> MyOrderList { get; set; }
-        public double totalPrice { get; set; }
+        public int LocationId { get; set; }
+        public int UserId { get; set; }
+        public double totalPrice { get; set; }       
 
-        public IEnumerator<Pizza> GetEnumerator()
-        {
-            return MyOrderList.GetEnumerator();
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return MyOrderList.GetEnumerator();
-        }
+        
     }
 }
