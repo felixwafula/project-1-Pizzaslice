@@ -41,3 +41,4 @@ C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\
 C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\Users\Login.g.cshtml.cs
 C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\Orders\MakeOrder.g.cshtml.cs
 C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\Pizzas\MakeOrder.g.cshtml.cs
+C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\Locations\CreateLocation.g.cshtml.cs
