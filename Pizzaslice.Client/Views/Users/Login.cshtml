@@ -1,9 +1,35 @@
 @model Pizzaslice.Domain.Models.User;
 
 @{
-    ViewBag.Title = "Login";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Login";    
 }
-<h2>@Model.UserName</h2>
-<h2>@Model.UserPassword</h2>
-<button type="button" asp-area="" asp-controller="Home" asp-action="Index">Submit</button>
+
+<h2>Login</h2>
+@using (Html.BeginForm("Login", "Users", FormMethod.Post)) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>User</legend>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UserName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UserName)
+            @Html.ValidationMessageFor(model => model.UserName)
+        </div>        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UserPassword)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UserPassword)
+            @Html.ValidationMessageFor(model => model.UserPassword)
+        </div> 
+        <p>
+            <input type="submit" value="Login"/>
+        </p>
+    </fieldset>
+
+    <div>
+        @Html.ActionLink("Back to list", "Index")
+    </div>
+}

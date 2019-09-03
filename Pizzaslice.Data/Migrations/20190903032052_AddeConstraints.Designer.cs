@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Pizzaslice.Data;
 
 namespace Pizzaslice.Data.Migrations
 {
     [DbContext(typeof(PizzasliceDbContext))]
-    partial class PizzasliceDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190903032052_AddeConstraints")]
+    partial class AddeConstraints
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -104,23 +106,33 @@ namespace Pizzaslice.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("MyCheese");
+                    b.Property<int?>("MyCheeseCheeseId");
 
-                    b.Property<string>("MyCrust")
-                        .IsRequired();
+                    b.Property<int>("MyCrustCrustId");
 
-                    b.Property<string>("MyMeat");
+                    b.Property<int?>("MyMeatMeatId");
 
-                    b.Property<string>("MySauce");
+                    b.Property<int?>("MySauceSauceId");
 
-                    b.Property<string>("MySize")
-                        .IsRequired();
+                    b.Property<int>("MySizeSizeId");
 
-                    b.Property<string>("MyVeggie");
+                    b.Property<int?>("MyVeggieVeggieId");
 
                     b.Property<int?>("OrderId");
 
                     b.HasKey("PizzaId");
+
+                    b.HasIndex("MyCheeseCheeseId");
+
+                    b.HasIndex("MyCrustCrustId");
+
+                    b.HasIndex("MyMeatMeatId");
+
+                    b.HasIndex("MySauceSauceId");
+
+                    b.HasIndex("MySizeSizeId");
+
+                    b.HasIndex("MyVeggieVeggieId");
 
                     b.HasIndex("OrderId");
 
@@ -202,6 +214,32 @@ namespace Pizzaslice.Data.Migrations
 
             modelBuilder.Entity("Pizzaslice.Domain.Models.Pizza", b =>
                 {
+                    b.HasOne("Pizzaslice.Domain.Models.Cheese", "MyCheese")
+                        .WithMany()
+                        .HasForeignKey("MyCheeseCheeseId");
+
+                    b.HasOne("Pizzaslice.Domain.Models.Crust", "MyCrust")
+                        .WithMany()
+                        .HasForeignKey("MyCrustCrustId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Pizzaslice.Domain.Models.Meat", "MyMeat")
+                        .WithMany()
+                        .HasForeignKey("MyMeatMeatId");
+
+                    b.HasOne("Pizzaslice.Domain.Models.Sauce", "MySauce")
+                        .WithMany()
+                        .HasForeignKey("MySauceSauceId");
+
+                    b.HasOne("Pizzaslice.Domain.Models.Size", "MySize")
+                        .WithMany()
+                        .HasForeignKey("MySizeSizeId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Pizzaslice.Domain.Models.Veggie", "MyVeggie")
+                        .WithMany()
+                        .HasForeignKey("MyVeggieVeggieId");
+
                     b.HasOne("Pizzaslice.Domain.Models.Order")
                         .WithMany("MyOrderList")
                         .HasForeignKey("OrderId");

@@ -7,13 +7,13 @@ namespace Pizzaslice.Domain.Models
         //properties.
         public int PizzaId { get; set; }
         [Required]
-        public Crust MyCrust { get; set; }
+        public string MyCrust { get; set; }
         [Required]
-        public Size MySize { get; set; }
-        public Sauce MySauce { get; set; }
-        public Cheese MyCheese { get; set; }
-        public Meat MyMeat { get; set; }
-        public Veggie MyVeggie { get; set; }
+        public string MySize { get; set; }
+        public string MySauce { get; set; }
+        public string MyCheese { get; set; }
+        public string MyMeat { get; set; }
+        public string MyVeggie { get; set; }
 
     }
 }

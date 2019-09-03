@@ -2976,6 +2976,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Users\\ViewUser.cshtml",
+      "TargetPath": "Views\\Users\\ViewUser.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -3006,8 +3011,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Users\\RegisterUser.cshtml",
-      "TargetPath": "Views\\Users\\RegisterUser.cshtml",
+      "FilePath": "Views\\Users\\CreateUser.cshtml",
+      "TargetPath": "Views\\Users\\CreateUser.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Locations\\ViewLocations.cshtml",
+      "TargetPath": "Views\\Locations\\ViewLocations.cshtml",
       "FileKind": "mvc"
     },
     {

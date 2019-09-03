@@ -5,27 +5,42 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Pizzaslice.Client.Models;
+using Pizzaslice.Data;
 using Pizzaslice.Domain.Models;
 
 namespace Pizzaslice.Client.Controllers
 {
     public class LocationsController : Controller
     {
+        PizzasliceDbContext _db = new PizzasliceDbContext();
+
+        //Create locations should be a POST: from admin.
         public IActionResult CreateLocation()
-        {   
+        {
             var store = new Location()
             {
-                LocationId = 1,
-                LocationName = "East side",
-                LocationAddress = "123 East St. Dallas TX",
-                LocationZipCode = 75249
+                LocationName = "West side",
+                LocationAddress = "456 West St. Arlington TX",
+                LocationZipCode = 76040
             };
-            return View(store);
+
+            _db.Locations.Add(store);
+            _db.SaveChanges();
+
+            return RedirectToAction("ViewLocations");
         }
 
-        public IActionResult SelectLocation()
+        //GET: /Locations/ViewLocations
+        public IActionResult ViewLocations()
         {
-            return View();
+            var locationsList = _db.Locations.ToList();
+            return View(locationsList);
+        }
+
+        //PUT: /Locations/UpdateLocation
+        public IActionResult Update(int id)
+        {
+            return View(_db.Locations.Single(c => c.LocationId == id));
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -5,6 +5,10 @@ namespace Pizzaslice.Data
 {
     public class PizzasliceDbContext : DbContext
     {
+        public PizzasliceDbContext()
+        {
+        }
+
         public PizzasliceDbContext(DbContextOptions<PizzasliceDbContext> options) : base(options)
         {
 
@@ -19,7 +23,11 @@ namespace Pizzaslice.Data
         public DbSet<Cheese> Cheeses { get; set; }
         public DbSet<Meat> Meats { get; set; }
         public DbSet<Veggie> Veggies { get; set; }
-              
+
+        protected override void OnConfiguring(DbContextOptionsBuilder builder)
+        {
+            builder.UseSqlServer("Server=tcp:pizzafelix.database.windows.net,1433;Initial Catalog=PizzasliceDB;Persist Security Info=False;User ID=sqladmin;Password=Password12345;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        }
 
     }
 }
