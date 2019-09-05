@@ -16,73 +16,91 @@ namespace Pizzaslice.Client.Controllers
 
         //Creating a Pizza.
         [HttpGet]
-        public IActionResult Read()
+        public IActionResult CreatePizza()
         {
             return View();
         }
         //POST /Pizzas/CreatePizza
-//         public IActionResult CreatePizza()
-// //should come from user input on ui. and post to DB in order.
-//         {   Crust crust = new Crust { CrustName = "Deep Pan", CrustPrice = 1.20 };
-//             Cheese cheese = new Cheese { CheeseName = "Mozarellla", CheesePrice = 1.00 };
-//             Sauce sauce = new Sauce { SauceName = "Marinara", SaucePrice = 0.50 };
-//             Meat meat = new Meat { MeatName = "sausage", MeatPrice = 2.00 };
-//             Size size = new Size { SizeName = "Large", SizePrice = 1.00 };
-//             Veggie veggie = new Veggie { VeggieName = "Tomato", VeggiePrice = 0.30 };
+        [HttpPost]
+        public IActionResult CreatePizza(Pizza pizza)
+        {   
+            if(ModelState.IsValid)
+            {
+                _db.Pizzas.Add(pizza);
+                _db.SaveChanges();
+            }
+            return RedirectToAction("ViewPizza");
+        }
 
-//              var pizza = new Pizza() 
-//                 {
-//                     MyCrust = crust, 
-//                     MySize = size, 
-//                     MySauce = sauce, 
-//                     MyCheese = cheese, 
-//                     MyMeat = meat, 
-//                     MyVeggie = veggie 
-//                 };
-
-//                 _db.Pizzas.Add(pizza);
-//                 _db.SaveChanges();
-
-//                 return View(pizza);
-
-            // List<Pizza> orderList = new List<Pizza>()
-            // {
-            //     new Pizza() 
-            //     {
-            //         MyCrust = crust, 
-            //         MySize = size, 
-            //         MySauce = sauce, 
-            //         MyCheese = cheese, 
-            //         MyMeat = meat, 
-            //         MyVeggie = veggie 
-            //     },
-            //     new Pizza()
-            //     {
-            //         MyCrust = crust, 
-            //         MySize = size, 
-            //         MySauce = sauce, 
-            //         MyCheese = cheese, 
-            //         MyMeat = meat, 
-            //         MyVeggie = veggie 
-            //     },
-            //     new Pizza()
-            //     {
-            //         MyCrust = crust, 
-            //         MySize = size, 
-            //         MySauce = sauce, 
-            //         MyCheese = cheese, 
-            //         MyMeat = meat, 
-            //         MyVeggie = veggie 
-            //     },
-            // };
-            // return View(orderList);
-        //}
+        //Viewing a pizza.        
         //GET /Pizzas/ViewPizza
         public IActionResult ViewPizza()
         {   
             var pizza = _db.Pizzas.ToList();
             return View(pizza);
         }
+
+        public ViewResult Read()
+        {
+            return View(_db.Pizzas.ToList());
+        }
+        //PUT: /Pizzas/ChangePizza
+        // public IActionResult ChangePizza(int id)
+        // {
+        //     var res = _db.Pizzas.Single(p => p.PizzaId == id);
+
+        //     res = crust.CrustName;
+        //     res.CrustPrice = crust.CrustPrice;
+        //     _db.Attach(crust);
+        //     _db.SaveChanges();
+
+        // }
+
+        //Delete /Pizzas/DeletePizza
+        public IActionResult DeletePizza(int? id) 
+        {
+                    
+            Pizza pizza = _db.Pizzas.Find(id);
+            
+            return View(pizza);  
+
+        }
+
+        [HttpPost, ActionName("Delete")]  
+        public ActionResult DeletePizza(int id)  
+        {  
+            Pizza pizza = _db.Pizzas.Find(id);  
+            _db.Pizzas.Remove(pizza);  
+            _db.SaveChanges();  
+            return RedirectToAction("ViewPizza");  
+        }  
+
+
+        // [HttpPut]
+        // public IActionResult Update(Pizza pizza)
+        // {
+        //     var res = _db.Pizzas.Single(p => p.PizzaId == pizza.PizzaId);
+
+        //     res.Name = crust.CrustName;
+        //     res.CrustPrice = crust.CrustPrice;
+        //     _db.Attach(crust);
+        //     _db.SaveChanges();
+
+        //     //this does the same thing as above. but it does it in one move.
+        //     var res1 = _db.Entry<Crust>(res);
+        //     res1.State = EntityState.Modified;
+        //     _db.SaveChanges();
+
+        //     return RedirectToAction("read");
+        // }
+
+        // public IActionResult Delete(Pizza pizza)
+        // {
+        //     _db.Pizzas.Remove(_db.Pizzas.Single(p => p.PizzaId == pizza.PizzaId));
+        //     return RedirectToAction("read");
+
+        // }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

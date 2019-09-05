@@ -1,0 +1,16 @@
+@model Pizzaslice.Domain.Models.Location;
+
+
+<h2>Welcome to Pizzaslice! You chose this store:</h2>
+@{
+    ViewBag.Title = "ViewSelectedLocation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>@Model.LocationId</h2>
+<h2>@Model.LocationName</h2>
+<h2>@Model.LocationAddress</h2>
+<h2>@Model.LocationZipCode</h2>
+
+<h2><a class="nav-link text-dark" asp-area="" asp-controller="Pizzas" asp-action="CreatePizza">Now Lets Make a Pizza!</a></h2>
+
+

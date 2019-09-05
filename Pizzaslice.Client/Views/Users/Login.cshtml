@@ -25,11 +25,14 @@
             @Html.ValidationMessageFor(model => model.UserPassword)
         </div> 
         <p>
-            <input type="submit" value="Login"/>
+            
         </p>
     </fieldset>
 
     <div>
-        @Html.ActionLink("Back to list", "Index")
+        <a class="nav-link text-dark" asp-area="" asp-controller="Locations" asp-action="ViewLocations">Login</a>
+    </div>
+    <div>
+        <h5><a class="nav-link text-dark" asp-area="" asp-controller="Pizzas" asp-action="CreatePizza">Make a Pizza!</a></h5>
     </div>
 }

@@ -46,3 +46,6 @@ C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\
 C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\Users\Read.g.cshtml.cs
 C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\Pizzas\CreatePizza.g.cshtml.cs
 C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\Pizzas\ViewPizza.g.cshtml.cs
+C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\Pizzas\Read.g.cshtml.cs
+C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\Locations\ViewSelectedLocation.g.cshtml.cs
+C:\revature\PizzaSliceApp\Pizzaslice.Client\obj\Debug\netcoreapp2.2\Razor\Views\Pizzas\DeletePizza.g.cshtml.cs

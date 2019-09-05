@@ -46,16 +46,15 @@ namespace Pizzaslice.Client.Controllers
         }
         //GET: Users/Login
         [HttpGet]
-        public IActionResult Login()
-        {   
-            var user = new User();                     
+        public IActionResult Login(User user)
+        {                                   
             return View(user);
         }
-        [HttpPost]
-        public IActionResult Login(User user)
-        {                                 
-            return View();
-        }
+        // [HttpPost]
+        // public IActionResult Login(User user)
+        // {                                 
+        //     return View();
+        //}
         [HttpPut]
         public IActionResult ChangeUser(int id)
         {                                 

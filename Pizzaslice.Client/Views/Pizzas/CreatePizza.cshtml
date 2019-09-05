@@ -1,0 +1,121 @@
+@model Pizzaslice.Domain.Models.Pizza
+
+
+<h2>Build your pizza</h2>
+
+@using (Html.BeginForm("CreatePizza", "Pizzas"))
+{   
+    <div>
+        <h4>Choose a Crust</h4>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyCrust, "Deep pan")   
+            @Html.LabelFor(m => m.MyCrust, "Deep Pan")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyCrust, "NY style")   
+            @Html.LabelFor(m => m.MyCrust, "NY style")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyCrust, "Chicago style")   
+            @Html.LabelFor(m => m.MyCrust, "Chicago style")    
+        </div> 
+    </div> 
+
+    <div>
+        <h4>Choose a Size</h4>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MySize, "Large")   
+            @Html.LabelFor(m => m.MySize, "Large")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MySize, "Medium")   
+            @Html.LabelFor(m => m.MySize, "Medium")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MySize, "Small")   
+            @Html.LabelFor(m => m.MySize, "Small")    
+        </div> 
+    </div>
+    <div>
+        <h4>Choose a Sauce</h4>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MySauce, "Marinara")   
+            @Html.LabelFor(m => m.MySauce, "Marinara")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MySauce, "BBQ")   
+            @Html.LabelFor(m => m.MySauce, "BBQ")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MySauce, "Hot Sauce")   
+            @Html.LabelFor(m => m.MySauce, "Hot Sauce")    
+        </div> 
+    </div>    
+    <div>
+        <h4>Choose a Cheese</h4>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyCheese, "Mozarella")   
+            @Html.LabelFor(m => m.MyMeat, "Mozarella")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyCheese, "Gouda")   
+            @Html.LabelFor(m => m.MyCheese, "Gouda")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyCheese, "Cheddar")   
+            @Html.LabelFor(m => m.MyCheese, "Cheddar")    
+        </div>
+    </div>
+    <div>
+        <h4>Choose a Meat</h4>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyMeat, "Pepperoni")   
+            @Html.LabelFor(m => m.MyMeat, "Pepperoni")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyMeat, "Sausage")   
+            @Html.LabelFor(m => m.MyMeat, "Sausage")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyMeat, "Chicken")   
+            @Html.LabelFor(m => m.MyMeat, "Chicken")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyMeat, "Steak")   
+            @Html.LabelFor(m => m.MyMeat, "Steak")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyMeat, "Ham")   
+            @Html.LabelFor(m => m.MyMeat, "Ham")    
+        </div>
+    </div>
+    <div>
+        <h4>Choose a Veggie</h4>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyVeggie, "Mushroom")   
+            @Html.LabelFor(m => m.MyVeggie, "Mushroom")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyVeggie, "Onion")   
+            @Html.LabelFor(m => m.MyVeggie, "Onion")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyVeggie, "Jalapeno")   
+            @Html.LabelFor(m => m.MyVeggie, "Jalapeno")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyVeggie, "Tomato")   
+            @Html.LabelFor(m => m.MyVeggie, "Tomato")    
+        </div> 
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyVeggie, "Bell Pepper")   
+            @Html.LabelFor(m => m.MyVeggie, "Bell Pepper")    
+        </div>
+        <div class="radio"> 
+            @Html.RadioButtonFor(m => m.MyVeggie, "Olives")   
+            @Html.LabelFor(m => m.MyVeggie, "Olives")    
+        </div>  
+    </div>    
+
+    <button type="submit" class="btn btn-primary">Save</button>
+}

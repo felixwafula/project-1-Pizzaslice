@@ -37,8 +37,8 @@ namespace Pizzaslice.Client.Controllers
             return View(locationsList);
         }
 
-        //PUT: /Locations/UpdateLocation
-        public IActionResult Update(int id)
+        //GET: /Locations/ViewSelectedLocation
+        public IActionResult ViewSelectedLocation(int id)
         {
             return View(_db.Locations.Single(c => c.LocationId == id));
         }

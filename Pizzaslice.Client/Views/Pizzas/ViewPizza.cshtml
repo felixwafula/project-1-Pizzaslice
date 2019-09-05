@@ -1,0 +1,40 @@
+@model IEnumerable<Pizzaslice.Domain.Models.Pizza>;
+
+<h2>Pizzas Ordered</h2>
+<table class="table">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.MyCrust)
+            </th>
+            <th>@Html.DisplayNameFor(model => model.MySize)
+            </th>
+            <th>@Html.DisplayNameFor(model => model.MySauce)
+            </th>
+            <th>@Html.DisplayNameFor(model => model.MyCheese)
+            </th>
+            <th>@Html.DisplayNameFor(model => model.MyMeat)
+            </th>
+            <th>@Html.DisplayNameFor(model => model.MyVeggie)
+            </th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model) {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.MyCrust)
+            </td>
+            <td>@Html.DisplayFor(modelItem => item.MySize)
+            </td>
+            <td>@Html.DisplayFor(modelItem => item.MySauce)
+            </td>
+            <td>@Html.DisplayFor(modelItem => item.MyCheese)
+            </td>
+            <td>@Html.DisplayFor(modelItem => item.MyMeat)
+            </td>
+            <td>@Html.DisplayFor(modelItem => item.MyVeggie)
+            </td>            
+            <td>                
+                <a class="nav-link text-dark" asp-area="" asp-controller="Pizzas" asp-action="DeletePizza">Remove</a>
+            </td>
+        </tr>
+        }
+    </table>
+    <h2><a class="nav-link text-dark" asp-area="" asp-controller="Pizzas" asp-action="CreatePizza">Make another Pizza!</a></h2>
