@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\revature\\PizzaSliceApp\\Pizzaslice.Client\\Pizzaslice.Client.csproj",
+  "FilePath": "c:\\revature\\PizzasliceApp\\Pizzaslice.Client\\Pizzaslice.Client.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2966,6 +2966,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Pizzas\\CreatePizza.cshtml",
+      "TargetPath": "Views\\Pizzas\\CreatePizza.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -2996,11 +3001,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\Pizzas\\MakeOrder.cshtml",
-      "TargetPath": "Views\\Pizzas\\MakeOrder.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -3011,6 +3011,26 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Pizzas\\ViewPizza.cshtml",
+      "TargetPath": "Views\\Pizzas\\ViewPizza.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Pizzas\\Read.cshtml",
+      "TargetPath": "Views\\Pizzas\\Read.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Users\\Read.cshtml",
+      "TargetPath": "Views\\Users\\Read.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Pizzas\\DeletePizza.cshtml",
+      "TargetPath": "Views\\Pizzas\\DeletePizza.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Users\\CreateUser.cshtml",
       "TargetPath": "Views\\Users\\CreateUser.cshtml",
       "FileKind": "mvc"
@@ -3018,6 +3038,11 @@
     {
       "FilePath": "Views\\Locations\\ViewLocations.cshtml",
       "TargetPath": "Views\\Locations\\ViewLocations.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Locations\\ViewSelectedLocation.cshtml",
+      "TargetPath": "Views\\Locations\\ViewSelectedLocation.cshtml",
       "FileKind": "mvc"
     },
     {
